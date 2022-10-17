@@ -1,0 +1,62 @@
+body{
+	background-image: url("images/coins.jpg");
+	font-family: Trebuchet MS;
+}
+
+h1{
+	font-size: 45px;
+	color: #005500;
+	margin-left: 25%;
+}
+
+.outside{
+	background-color: #DDEECC;
+	border: 3px solid black;
+	width: 900px;
+	margin-bottom: 10px;
+	margin: auto;
+}
+
+.inside{
+	background-color: white;
+	border: 2px dotted black;
+	margin: 20px 20px 20px 20px;
+	width: auto;
+}
+
+
+table{
+	margin: 2% 5% 2% 5%;	
+}
+
+td{
+	font-size: 20px;
+	width: 28%;
+	border: 1px solid black;
+}
+
+.delete{
+	width: 2%
+}
+
+.update{
+	width: 2%
+}
+
+.tax{
+	width: 2%
+}
+button{
+	font-size: 20px;
+	font-family: Trebuchet MS;
+	background-color: white;
+	border: none;
+}
+
+input{
+	font-size: 16px;
+	font-family: Trebuchet MS;
+	background-color: white;
+	border: none;
+	width: 95%;
+}

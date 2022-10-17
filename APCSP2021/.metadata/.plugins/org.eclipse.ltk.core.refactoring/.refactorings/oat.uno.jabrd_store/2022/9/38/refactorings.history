@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;oat.uno.jabrd_store/WebContent/images/JABRDLogo copy.png&apos; to &apos;JABRDLogo.png&apos;" description="Rename resource &apos;JABRDLogo copy.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/images/JABRDLogo copy.png" name="JABRDLogo.png" stamp="1663118399014" updateReferences="true"/>
+</session>

@@ -1,0 +1,95 @@
+@charset "ISO-8859-1";
+
+
+body{
+	background-color: #4E4B4B;
+}
+
+#top{
+	width: 80%;
+	margin: auto;
+	
+}
+
+#heading{
+	font-size: 50pt;
+	text-align: center;
+	color: #B9B6B5;
+}
+
+#subHeading{
+	font-size: 25pt;
+	text-align: center;
+	color: #B9B6B5;
+	margin-top: -5%;
+}
+
+.navBar{
+	text-decoration: none;
+	font-size: 20pt;
+	font-weight: bolder;
+	font-family: Comic San;
+	margin: 1%;
+	display: inline-block;
+	color: black;
+	border: 4px solid black;
+	padding: 4px;
+}
+
+#main{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	border: 3px solid blue;
+}
+
+#mainImg{
+	width: 90%;
+	height: auto;
+	padding: 5px;
+}
+
+.subImages{
+	width: 11%;;
+	display: inline-block;	
+	margin: 1%;
+	height: auto;
+	border: 3px solid red;
+}
+
+#subBar{
+	margin: auto;
+	width: 80%;
+	height: 15%;
+	border: 3px solid orange;
+	text-align: center;
+	margin-top: 2%;
+}
+.smallImgs{
+	width: 90%;
+	height: auto;
+	padding: 5px;
+}
+
+#box{
+	background-color: #A6A5A5;
+	padding: 15px;
+	width: 90%;
+	margin: auto;
+	border: 3px solid black;
+}
+
+#address{
+	
+}
+
+#addressTxt{
+	font-family: times new roman;
+	font-size: 25pt;
+	font-weight: bolder;
+}
+
+#addCart{
+	text-align: center;
+	margin: 2%;
+}

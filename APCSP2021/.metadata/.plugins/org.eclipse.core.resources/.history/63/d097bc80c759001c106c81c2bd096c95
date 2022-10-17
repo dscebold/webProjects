@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+
+#mainImg {
+	width: 90%;
+	height: auto;
+	padding: 5px;
+}
+
+.subImages {
+	width: 11%;;
+	display: inline-block;
+	margin: 1%;
+	height: auto;
+}

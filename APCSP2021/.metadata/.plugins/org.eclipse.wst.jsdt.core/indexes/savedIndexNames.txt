@@ -1,0 +1,17 @@
+INDEX VERSION 1.4+C:\Users\dsceb\OneDrive\Desktop\APCSP2021\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+680260707.index
+379124505.index
+4263944434.index
+1594675931.index
+144892412.index
+2808454178.index
+2756160448.index
+1621543177.index
+2373166067.index
+1521502033.index
+4125774534.index
+2321720197.index
+1547388274.index
+516704818.index
+596837592.index
+205026634.index

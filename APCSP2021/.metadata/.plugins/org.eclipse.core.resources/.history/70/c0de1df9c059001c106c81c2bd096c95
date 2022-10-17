@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+   <html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Performance Task</title>
+<link type="text/css" rel="stylesheet" href="task.css">
+<script type="text/javascript" src="task.js">
+	
+</script>
+</head>
+<body>/
+
+<h1>Can You Create A Stable Ecosystem?</h1>
+
+<input placeholder="Prey" id = "preyInput">
+<input placeholder="Predators"id = "predatorInput">
+<input placeholder="Plants" id = "plantInput">
+<button id = "startButton" onclick= "startSim()">Start</button>
+
+<h1 id = "count">Prey: 0<br>Predators: 0<br>Plants: 0</h1>
+
+</body>
+</html>

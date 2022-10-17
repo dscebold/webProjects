@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cart</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="magic.js">
+	
+</script>
+</head>
+<body onload= "makeCart(), test()">
+	<div>
+		<a href="index.html"><div class="navBar">Products</div></a> <a
+			href="aboutUs.html"><div class="navBar">About Us</div></a> <a
+			href="cart.html"><div id="cartDiv">
+				<img src="images\carts.png" id="cartImg">
+			</div></a>
+	</div>
+
+	<div id="cartBox">
+		<table id= "cartTable"></table>
+		<h2 id = "total"></h2>
+		<a><h2></h2></a>
+	</div>
+
+</body>
+</html>

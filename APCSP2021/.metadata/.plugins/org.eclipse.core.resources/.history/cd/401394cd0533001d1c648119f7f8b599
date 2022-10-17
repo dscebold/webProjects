@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Products</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="magic.js">
+	
+</script>
+</head>
+<body onload = "test();">
+	<div id= "navDiv">
+		<a href="index.html"><div class="navBar">Products</div></a> 
+		<a href="aboutUs.html"><div class="navBar">About Us</div></a> 
+		<a href="cart.html"><div id="cartDiv"><img src="images\carts.png" id="cartImg"></div></a>
+	</div>
+	<div id="top">
+		<img src="images/JABRDLogo.png">
+		<h1 id="heading">Tanks &apos;n Stuff</h1>
+		<h1 id="subHeading">"For all your heavily armored needs&excl;"</h1>
+	</div>
+
+
+	<div id="box">
+		<!-- start of product images -->
+		<div id="main">
+			<img src="images/JABRDLogo.png" id="mainImg">
+			<p id="caption">
+				Literally to angry to die Energy, the Flying Warcrime<br>&dollar;3500000
+			</p>
+			<button id="addCart" onclick= "addToCart()">Add to Cart</button>
+		</div>
+		<!-- main image -->
+
+		<div id="subBar">
+			<!-- sub image bar -->
+			<div class="subImages">
+				<img src="images/JABRDLogo.png" class="smallImgs"
+					onclick="mainImg(this)">
+			</div>
+			<!-- sub images -->
+			<div class="subImages">
+				<img src="images/JABRDLogo.png" class="smallImgs"
+					onclick="mainImg(this)">
+			</div>
+			<!-- sub images -->
+			<div class="subImages">
+				<img src="images/JABRDLogo.png" class="smallImgs"
+					onclick="mainImg(this)">
+			</div>
+			<!-- sub images -->
+			<div class="subImages">
+				<img src="images/JABRDLogo.png" class="smallImgs"
+					onclick="mainImg(this)">
+			</div>
+			<!-- sub images -->
+			<div class="subImages">
+				<img src="images/JABRDLogo.png" class="smallImgs" onclick="mainImg(this)">
+			</div>
+			<!-- sub images -->
+			<div class="subImages">
+				<img src="images/JABRDLogo.png" class="smallImgs" onclick="mainImg(this)">
+			</div>
+			<!-- sub images -->
+			<div class="subImages">
+				<img src="images/JABRDLogo.png" class="smallImgs" onclick="mainImg(this)">
+			</div>
+			<!-- sub images -->
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>

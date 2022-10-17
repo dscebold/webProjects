@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>About Us</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="magic.js">
+	
+</script>
+</head>
+<body onload= "clock(), changeColor(), changeOpen()">
+	<div>
+		<a href="index.html"><div class="navBar">Products</div></a> <a
+			href="aboutUs.html"><div class="navBar">About Us</div></a> <a
+			href="cart.html"><div id="cartDiv">
+				<img src="images\carts.png" id="cartImg">
+			</div></a>
+	</div>
+	<div id="top">
+		<img src="images/JABRDLogo.png" id = topIMG>
+	</div>
+
+
+	<div id="box">
+		<!-- start of product images -->
+		<div id = "openClosed"><h1 id = "openClosedTxt">Open</h1></div>
+		<div id="clockDiv" >
+			<p id="clock"></p>
+		</div>
+		<div id = "aboutTopBar">
+			<div id="address" class="aboutTop">
+				<h2 id="addressTxt">
+					Tanks &apos;n Stuff<br>5710 S 176th Ave<br>Omaha,
+					NE 68135
+				</h2>
+			</div>
+			<div id="store" class="aboutTop">
+				<img src="images/store.jpg" id="storeImg">
+			</div>
+			<div id="hours" class="aboutTop">
+				<table id="hoursTable">
+					<tr>
+						<td class="dayRow">Mon</td>
+						<td class="hourRow">Closed</td>
+					</tr>
+					<tr>
+						<td class="dayRow">Tues-Thur</td>
+						<td class="hourRow">2:00 AM - 4:00 AM</td>
+					</tr>
+					<tr>
+						<td class="dayRow">Fri-Sat</td>
+						<td class="hourRow">12:00 AM - 11:00 PM</td>
+					</tr>
+					<tr>
+						<td class="dayRow">Sun</td>
+						<td class="hourRow">10:00 AM - 6:00 PM</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div id="mapBox">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6003.771737876843!2d-96.19969905679828!3d41.202461758494856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793f12627bacf83%3A0xfa3e7fba89b9abbc!2sMillard%20West%20High%20School!5e0!3m2!1sen!2sus!4v1636990683134!5m2!1sen!2sus"
+				width="400" height="300" style="border: 0;" allowfullscreen=""
+				loading="lazy" id="map"></iframe>
+		</div>
+
+		
+
+	</div>
+
+</body>
+</html>

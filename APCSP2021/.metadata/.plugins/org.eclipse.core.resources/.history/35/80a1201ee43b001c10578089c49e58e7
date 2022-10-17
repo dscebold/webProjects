@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+
+function test(){
+	alert("I work!");
+}
+
+function changeThePTag(){
+	document.getElementById("thePTag").innerHTML = "Some new Text";
+}

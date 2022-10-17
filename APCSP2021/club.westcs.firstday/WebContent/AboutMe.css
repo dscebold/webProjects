@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url("images/BEANS.jpg");
+	/*background-repeat: no-repeat;
+	background-size: 100%; */
+}
+
+#fast{
+	color: red;
+}

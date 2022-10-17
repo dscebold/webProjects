@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> JS Web Notes Day One</title>
+<link type="text/css" rel="stylesheet" href="NewFile.css">
+<script type = "text/javascript" src = "NewFile.js"> </script>
+</head>
+<body>
+	<button onclick = "test()"> Testing </button>
+</body>
+</html>

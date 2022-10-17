@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+div{
+	font-size: 80pt;
+	color: green;
+	border : 15px solid orange;
+	display: inline-block;
+}
+
+tr{
+	color: blue;
+}
+
+td{
+	font-size: 20pt;
+	border:  1px solid black;
+	padding: 5px;
+}

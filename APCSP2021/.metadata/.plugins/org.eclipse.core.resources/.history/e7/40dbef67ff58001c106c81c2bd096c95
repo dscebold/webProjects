@@ -1,0 +1,200 @@
+class prey { //class that creates and defines the predators
+	constructor(hunger, age, gender) {
+		this.hunger = hunger;
+		this.age = age;
+		this.gender = gender;
+
+	}
+
+}
+
+
+class predator { //class that creates and defines the predators
+	constructor(hungry, lifespan, mate) {
+		this.hungry = hungry
+		this.lifespan = lifespan;
+		this.mate = true
+	}
+}
+
+
+function setGender() { //function that sets the preys gender
+	if (Math.floor(Math.random() * 2) == 0) { //random() integer function from W3 schools, returns a number from 0 - 1
+		return true;
+	}
+	else {
+		return false;
+	}
+
+}
+
+
+
+
+
+var plants = 0;
+
+const preyList = [];
+
+const predatorList = [];
+
+const preyBabies = [];
+
+const predatorBabies = [];
+
+
+function startSim() {
+	plants = 0;
+	for (let i = 0; i < preyList.length; i++) {
+		preyList.splice(i, 1);
+	}
+	for (let i = 0; i < predatorList.length; i++) {
+		predatorList.splice(i, 1);
+	}
+
+
+
+	if ((!(isNaN(document.getElementById("preyInput").value))) && (!(isNaN(document.getElementById("predatorInput").value))) && (!(isNaN(document.getElementById("plantInput").value)))) { //makes sure all the input fields are numbers 
+		for (let i = 0; i <= parseInt(document.getElementById("preyInput").value); i++) { //creates as many prey as number in input field
+			let temp = new prey((Math.floor(Math.random() * 50) + 100), (Math.floor(Math.random() * 10) + 1), setGender()) //sets the prey hunger to be 100 to 150 and age to be 1-10 using a random() function from W3 Schools
+			preyList.push(temp);
+		}
+		for (let i = 0; i <= parseInt(document.getElementById("predatorInput").value); i++) { //creates as many predator as number in input field
+			let tamp = new predator((Math.floor(Math.random() * 50) + 50), (Math.floor(Math.random() * 10) + 1), setGender()) //sets the predtor hunger to be 100 to 50 and age to be 1-10 using a random() function from W3 Schools
+			predatorList.push(tamp);
+		}
+
+		plants = parseInt(document.getElementById("predatorInput").value); //sets plants to number in input field 
+
+		document.getElementById("preyInput").value = "";
+		document.getElementById("predatorInput").value = "";
+		document.getElementById("plantInput").value = "";
+
+		runSim();
+	}
+	else {
+		alert("One of your Inputs is not a number. Please make sure all of your Inputs are numbers"); //tells them they need to put all numbers or else it wont work 
+	}
+}
+
+
+
+
+function runSim() {
+	if (plants > 1500000000) {
+		plants = 1500000000;
+	}
+	if (plants < 0) {
+		plants = 0;
+	}
+	console.log(predatorList);
+	checkAlive();
+	mate();
+	plants += Math.abs(plants % 20);
+	for (bunny of preyList) {
+		bunny.age++;  // ages the prey 
+		bunny.hunger -= Math.floor(Math.random() * 15) + 10;  //makes prey hungrier
+		checkAlive();
+		if (bunny.hunger <= 75 && plants > 0) {  //checks to see if prey is hungry
+			let grass = Math.floor(Math.random() * 25) + 25;
+			bunny.hunger += grass;  //feeds prey and gets rid of plants
+			plants -= grass;
+		}
+	}
+	for (lion of predatorList) {
+		lion.age++;
+		lion.hungry -= Math.floor(Math.random() * 15) + 5
+		checkAlive();
+		if (lion.hungry < 50) {
+			if (Math.floor(Math.random() * 4) == 1) { // 1 in 4 chance predator finds a prey
+				if (Math.floor(Math.random() * 5) == 1) { //chance the prey escapes
+
+				}
+				else {
+					let food = Math.floor(Math.random() * preyList.length);
+					lion.hungry += preyList[food].hunger;
+					preyList.splice(food, 1);
+				}
+			}
+		}
+	}
+
+	for (bunny of preyList) {
+		if (bunny.hunger > 150) {
+			bunny.hunger = 150;
+		}
+	}
+	for (lion of predatorList) {
+		if (lion.hunger > 100) {
+			lion.hunger = 100;
+		}
+	}
+	for (bunny of preyList) {
+		if (bunny.hunger < 0) {
+			bunny.hunger = 0;
+		}
+	}
+	for (lion of predatorList) {
+		if (lion.hunger < 0) {
+			lion.hunger = 0;
+		}
+	}
+
+	refresh();
+	if(preyList.length > 0 && predatorList.length > 0 && plants > 0) {
+		var year = setInterval(runSim, 3000);
+	}
+	else{
+		clearInterval(year); 
+		alert("Game Over"); 
+	}
+	
+}
+
+
+function checkAlive() {
+	for (let i = 0; i < preyList.length; i++) {
+		if ((preyList[i].hunger <= 0) || (preyList[i].age >= 40)) { //checks if each prey is alive
+			preyList.splice(i, 1); // if the prey is not alive, removes it 
+		}
+	}
+	for (let i = 0; i < predatorList.length; i++) {
+		if ((predatorList[i].hunger <= 0) || (predatorList[i].age >= 40)) {
+			predatorList.splice(i, 1);
+		}
+	}
+}
+
+
+function mate() {
+	let hello = (preyList.length % 20);
+	let goodbye = (predatorList.length % 20);
+	for (let i = 0; i <= hello; i++) {
+		if (preyList[Math.floor(Math.random() * preyList.length)].gender != preyList[Math.floor(Math.random() * preyList.length)].gender) {
+			let baby = new prey((Math.floor(Math.random() * 50) + 100), (Math.floor(Math.random() * 10) + 1), setGender());
+			preyBabies.push(baby);
+		}
+	}
+	for (let i = 0; i <= goodbye; i++) {
+		if (predatorList[Math.floor(Math.random() * predatorList.length)].mate != predatorList[Math.floor(Math.random() * predatorList.length)].mate) {
+			let boby = new predator((Math.floor(Math.random() * 50) + 50), (Math.floor(Math.random() * 10) + 1), setGender());
+			predatorBabies.push(boby);
+		}
+	}
+	for (let i = 0; i < preyBabies.length; i++) {
+		preyList.push(preyBabies[i]);
+		preyBabies.splice(i, 1);
+
+	}
+	for (let i = 0; i < predatorBabies.length; i++) {
+		predatorList.push(predatorBabies[i]);
+		predatorBabies.splice(i, 1);
+	}
+
+}
+
+
+function refresh() {
+	document.getElementById("count").innerHTML = "Prey: " + (preyList.length - 1) + "<br>Predators: " + (predatorList.length - 1) + "<br>Plants: " + plants;
+}
+

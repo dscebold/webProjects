@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Performance Task</title>
+<link type="text/css" rel="stylesheet" href="task.css">
+<script type="text/javascript" src="task.js">
+	
+</script>
+</head>
+<body>
+	<h1>Can You Create A Stable Ecosystem?</h1>
+
+	<input placeholder="Prey" id="preyInput">
+	<input placeholder="Predators" id="predatorInput">
+	<input placeholder="Plants" id="plantInput">
+	<button id="startButton" onclick="startSim()">Start</button>
+
+	<h1 id="count">
+		Prey: 0<br>Predators: 0<br>Plants: 0
+	</h1>
+	<div class = "main">
+		<img src="images/antelope.jpg" id="mainPreyImg" class = "mainImg">
+	</div>
+	<div class = "main">
+		<img src="images/anaconda.jpg" id="mainPredatorImg" class = "mainImg">
+	</div>
+	
+
+
+
+	<div id="subBar">
+		<!-- sub image bar -->
+		<div class="subImages">
+			<img src="images/deer.jpg" class="smallImgs"
+				onclick="mainPreyImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/elk.jpg" class="smallImgs" onclick="mainPreyImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/fish.jpg" class="smallImgs"
+				onclick="mainPreyImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/rabbit.jpg" class="smallImgs"
+				onclick="mainPreyImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/seal.jpg" class="smallImgs" onclick="mainPreyImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/squirrel.jpg" class="smallImgs" onclick="mainPreyImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/zebra.jpg" class="smallImgs" onclick="mainPreyImg(this)">
+		</div>
+		<!-- sub images -->
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	<div id="subBar">
+		<!-- sub image bar -->
+		<div class="subImages">
+			<img src="images/bear.jpg" class="smallImgs"
+				onclick="mainPredatorImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/crocodile.jpg" class="smallImgs" onclick="mainPredatorImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/eagle.jpg" class="smallImgs"
+				onclick="mainPredatorImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/lion.jpg" class="smallImgs"
+				onclick="mainPredatorImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/panther.jpg" class="smallImgs" onclick="mainPredatorImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/shark.jpg" class="smallImgs" onclick="mainPredatorImg(this)">
+		</div>
+		<!-- sub images -->
+		<div class="subImages">
+			<img src="images/wolf.jpg" class="smallImgs" onclick="mainPredatorImg(this)">
+		</div>
+		<!-- sub images -->
+	</div>
+
+
+
+</body>
+</html>

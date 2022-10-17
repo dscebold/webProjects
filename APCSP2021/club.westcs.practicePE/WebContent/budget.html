@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Budget</title>
+<link type="text/css" rel="stylesheet" href="budget.css">
+<script type="text/javascript" src="budget.js">
+	
+</script>
+</head>
+<body onload="addTotal()">
+	<div class="outside">
+		<h1>Budgeting Website</h1>
+		<div class="inside">
+			<table>
+				<tr>
+					<td class=delete>---------</td>
+					<td>NAME</td>
+					<td>PRICE</td>
+					<td>TAX</td>
+					<td>TOTAL</td>
+					<td class=update>---------</td>
+				</tr>
+				<tr>
+					<td>---------</td>
+					<td><input placeholder="Title" id=name></td>
+					<td><input placeholder="Price" id=price></td>
+					<td id="firstTax">20%</td>
+					<td id="firstTotal">Calculates Here</td>
+					<td class=update><button onclick="checkNum()">Add</button></td>
+				</tr>
+				<tr>
+			</table>
+			<table id="table1">
+
+
+			</table>
+			<table>
+				<tr>
+					<td class=delete><button>Delete</button></td>
+					<td>---------</td>
+					<td></td>
+					<td>TOTAL</td>
+					<td id = "grandTotal">Calculates Here</td>
+					<td class=update>---------</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+</body>
+</html>

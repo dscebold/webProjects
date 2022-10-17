@@ -1,0 +1,173 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #4E4B4B;
+	font-family: Comic Sans MS;
+}
+
+#top {
+	width: 80%;
+	margin: auto;
+}
+
+#heading {
+	font-size: 50pt;
+	text-align: center;
+	color: #B9B6B5;
+}
+
+#subHeading {
+	font-size: 25pt;
+	text-align: center;
+	color: #B9B6B5;
+	margin-top: -5%;
+}
+
+.navBar {
+	text-decoration: none;
+	font-size: 20pt;
+	font-weight: bolder;
+	font-family: Comic Sans MS;
+	margin: 1%;
+	display: inline-block;
+	color: black;
+	border: 4px solid black;
+	padding: 4px;
+}
+
+#main {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+#mainImg {
+	width: 90%;
+	height: auto;
+	padding: 5px;
+}
+
+
+#topIMG {
+	
+}
+
+.subImages {
+	width: 11%;;
+	display: inline-block;
+	margin: 1%;
+	height: auto;
+}
+
+#subBar {
+	margin: auto;
+	width: 80%;
+	height: 15%;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.smallImgs {
+	width: 90%;
+	height: auto;
+	padding: 5px;
+}
+
+#box {
+	background-color: #A6A5A5;
+	padding: 15px;
+	width: 90%;
+	margin: auto;
+	border: 3px solid black;
+}
+
+
+
+#addCart {
+	text-align: center;
+	margin: 2%;
+}
+
+#cartImg {
+	background-color: #4E4B4B;
+	width: 75%;
+	height: auto;
+	padding: 5px;
+}
+
+#cartDiv {
+	width: 8%;
+	margin-left: 90%;
+	margin-top: -5%;
+}
+
+#hours {
+	padding: 5px;
+}
+
+#hoursTable {
+	padding: 10px;
+}
+
+.dayRow {
+	font-size: 14pt;
+	font-weight: bolder;
+	font-family: Comic Sans MS;
+	padding: 5px;
+}
+
+.hourRow {
+	padding: 5px;
+}
+
+#store{
+	background-color: #00FF00;
+	text-align: center;
+}
+
+#storeImg{
+	padding: 15px;
+}
+
+#address {
+	
+}
+
+#addressTxt {
+	font-family: times new roman;
+	font-size: 25pt;
+	font-weight: bolder;
+}
+
+#mapBox{
+	text-align: center;
+}
+
+.aboutTop{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 8%
+}
+
+#openClosed{
+	text-align: center;
+}
+
+#clockDiv{
+	text-align: center;
+}
+
+
+#cartTable{
+	
+}
+
+td{
+	width: 20%;
+	border: 3px solid black;
+	text-align: center;
+	vertical-align: text-top;
+}
+

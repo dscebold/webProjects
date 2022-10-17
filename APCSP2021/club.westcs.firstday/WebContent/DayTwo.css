@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: lime;
+}
+
+
+
+p{
+	color : #FF0000;
+	font-weight: bolder;
+	display: block;
+	left: 38%; /*this is a percent of the page*/
+	position: relative;
+	/*This is a comment in css*/
+}
+
+
+h1{
+	position: relative;
+	left: 30%;
+}
+
+#thatOne{
+	color: orange;
+}
+.items{ /*this is a class. multiple items are in a class*/
+	font-size: 130pt;
+	text-decoration: line-through;
+}
+
+#left{
+	display: inline-block;
+	width: 50%;
+	
+}
+#someText{
+	border : 1px solid purple;
+}
+
+#right{
+	display: inline-block;
+	width:  50%;
+	
+}
+.nav{
+	display: inline-block;
+	width: inherit;
+	border: 1px solid black;
+	padding: 10px; /*this is the distance between content and the border*/
+	margin: 5px; /*this is the distance between elements*/ 
+}

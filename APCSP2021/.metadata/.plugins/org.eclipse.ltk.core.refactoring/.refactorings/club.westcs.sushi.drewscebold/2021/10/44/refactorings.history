@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;club.westcs.sushi.drewscebold/WebContent/index.html&apos; to &apos;sushi.html&apos;" description="Rename resource &apos;index.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/index.html" name="sushi.html" stamp="1635254463748" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;club.westcs.sushi.drewscebold/WebContent/sushi.html&apos; to &apos;index.html&apos;" description="Rename resource &apos;sushi.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/sushi.html" name="index.html" stamp="1635254565751" updateReferences="true"/>
+</session>

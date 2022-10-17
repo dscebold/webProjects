@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;club.westcs.js_store/WebContent/hours.html&apos;" deleteContents="false" description="Delete resource &apos;club.westcs.js_store/WebContent/hours.html&apos;" element1="/club.westcs.js_store/WebContent/hours.html" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1636987252830"/>
+</session>

@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+
+
+.mainImg {
+	width: 25%;
+	height: auto;
+	padding: 5px;
+	display: inline-block;
+}
+
+.subImages {
+	width: 11%;;
+	display: inline-block;
+	margin: 1%;
+	height: auto;
+}
+
+#main {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+.smallImgs {
+	width: 90%;
+	height: auto;
+	padding: 5px;
+}
+
+#mainPreyImg{
+	display: inline-block;
+}
+
+#mainPredatorImg{
+	display: inline-block;
+}

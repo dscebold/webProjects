@@ -1,0 +1,73 @@
+@charset "ISO-8859-1";
+
+
+#heading {
+	color: #F14A29;
+	font-family: Georgia;
+	font-size: 40pt;
+	background-color: #EFEFEF;
+}
+.subHeading{
+	color: #F14A29;
+	font-family: Georgia;
+	background-color: #EFEFEF;
+}
+.subSubHeading{
+	color: #F14A29;
+	font-family: Helvetica;
+	font-weight: bolder;
+}
+img{
+	border: 1px solid #4A3416;
+	background-color: #F7F3DA;
+	padding: 7px;
+}
+
+.tableRow{
+	font-weight: bolder;
+	border-right: 1px solid #4A3416;
+}
+td{
+	padding: 5px 7px 5px 7px;
+}
+
+
+table{
+	border-collapse: collapse;
+}
+.boldList{
+	font-weight: bolder;
+}
+
+body{
+	font-size: 14pt;
+	font-family: Helvetica;
+	color: #4A3416;
+}
+
+.comments{
+	border: 1px dashed #DEDEDE;
+	background-color: #FAFAFA;
+	margin-top: 15px;
+	margin-left: 2.75%;
+}
+
+.commentsImg{
+	display: inline-block;
+	padding: 10px 7px 10px 7px;
+	background-color: #FAFAFA;
+	border: none;
+}
+p{
+	display: inline-block;
+}
+finalImgs{
+	display: inline-block;
+}
+#Links{
+	list-style: none;
+}
+.bottomLinks{
+	text-decoration: none;
+	color: black;
+}
